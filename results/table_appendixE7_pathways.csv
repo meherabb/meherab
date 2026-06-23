@@ -1,0 +1,11 @@
+Dataset,#SC,#CF,#AI
+Food-101,1,0,2
+Oxford-Pets,1,0,2
+DTD,1,0,2
+Aircraft,1,0,2
+Flowers102,1,0,2
+EuroSAT,1,0,2
+Caltech-101,1,0,2
+RESISC45,0,0,3
+PatternNet,1,1,1
+UCMerced,0,0,3

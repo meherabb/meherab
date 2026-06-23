@@ -1,0 +1,12 @@
+Dataset,Search_time_s,Search_GPU_hours
+Food-101,228.4,0.063
+Flowers102,215.3,0.060
+Caltech-101,212.4,0.059
+Aircraft,203.6,0.057
+UCMerced,177.3,0.049
+DTD,176.3,0.049
+RESISC45,173.9,0.048
+Oxford-Pets,148.9,0.041
+PatternNet,145.9,0.041
+EuroSAT,145.6,0.040
+Mean,182.8,0.051

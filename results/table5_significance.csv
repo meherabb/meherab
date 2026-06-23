@@ -1,0 +1,41 @@
+Dataset,Baseline,MEHERAB,Baseline Mean,Delta,t,p,Sig
+Food-101,Linear Probe,65.44,65.42,0.02,0.042,0.96876,n.s.
+Food-101,Random RASS,65.44,60.28,5.16,4.038,0.01562,*
+Food-101,LoRA,65.44,67.74,-2.3,-4.582,0.01017,**
+Food-101,Adapter,65.44,65.86,-0.42,-1.094,0.33543,n.s.
+Oxford-Pets,Linear Probe,92.02,92.04,-0.02,-0.134,0.90015,n.s.
+Oxford-Pets,Random RASS,92.02,90.32,1.7,3.29,0.03022,*
+Oxford-Pets,LoRA,92.02,92.18,-0.16,-0.538,0.61941,n.s.
+Oxford-Pets,Adapter,92.02,92.18,-0.16,-0.571,0.59873,n.s.
+DTD,Linear Probe,71.78,69.92,1.86,4.503,0.0108,**
+DTD,Random RASS,71.78,71.38,0.4,0.727,0.50767,n.s.
+DTD,LoRA,71.78,72.06,-0.28,-0.824,0.45611,n.s.
+DTD,Adapter,71.78,71.54,0.24,0.487,0.65157,n.s.
+Aircraft,Linear Probe,37.1,35.78,1.32,2.381,0.07592,n.s.
+Aircraft,Random RASS,37.1,33.04,4.06,8.529,0.00104,***
+Aircraft,LoRA,37.1,43.08,-5.98,-7.897,0.00139,***
+Aircraft,Adapter,37.1,42.54,-5.44,-8.638,0.00099,***
+Flowers102,Linear Probe,97.9,97.86,0.04,0.389,0.71743,n.s.
+Flowers102,Random RASS,97.9,96.36,1.54,2.724,0.05277,n.s.
+Flowers102,LoRA,97.9,98.06,-0.16,-1.554,0.19514,n.s.
+Flowers102,Adapter,97.9,97.68,0.22,1.833,0.14068,n.s.
+EuroSAT,Linear Probe,95.74,92.52,3.22,8.624,0.00099,***
+EuroSAT,Random RASS,95.74,95.08,0.66,4.208,0.01361,*
+EuroSAT,LoRA,95.74,93.72,2.02,12.203,0.00026,***
+EuroSAT,Adapter,95.74,93.76,1.98,4.975,0.00762,**
+Caltech-101,Linear Probe,94.62,94.2,0.42,3.28,0.03051,*
+Caltech-101,Random RASS,94.62,93.04,1.58,3.177,0.03365,*
+Caltech-101,LoRA,94.62,94.82,-0.2,-0.943,0.39916,n.s.
+Caltech-101,Adapter,94.62,94.7,-0.08,-1.206,0.29426,n.s.
+RESISC45,Linear Probe,78.38,74.94,3.44,5.311,0.00604,**
+RESISC45,Random RASS,78.38,79.1,-0.72,-1.406,0.23257,n.s.
+RESISC45,LoRA,78.38,77.76,0.62,1.043,0.35586,n.s.
+RESISC45,Adapter,78.38,77.08,1.3,1.72,0.16048,n.s.
+PatternNet,Linear Probe,97.66,95.24,2.42,24.96,2e-05,***
+PatternNet,Random RASS,97.66,97.64,0.02,0.147,0.88992,n.s.
+PatternNet,LoRA,97.66,96.12,1.54,7.292,0.00188,***
+PatternNet,Adapter,97.66,96.06,1.6,11.314,0.00035,***
+UCMerced,Linear Probe,94.29,94.84,-0.56,-2.746,0.05161,n.s.
+UCMerced,Random RASS,94.29,95.56,-1.27,-6.532,0.00284,***
+UCMerced,LoRA,94.29,94.05,0.24,0.418,0.69738,n.s.
+UCMerced,Adapter,94.29,93.33,0.95,1.922,0.12705,n.s.
