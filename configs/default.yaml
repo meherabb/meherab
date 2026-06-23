@@ -1,0 +1,58 @@
+# Default MEHERAB configuration -- mirrors src/meherab/config.py::MEHERABConfig
+# field-for-field. See docs/PAPER_MAP.md for the paper equation/section each
+# field corresponds to.
+
+backbone:
+  name: vit_base_patch16_224
+  img_size: 224
+
+proxy:
+  # N_prx = max(base_proxy_n, min(proxy_max_n, proxy_per_class * n_classes))
+  base_proxy_n: 256
+  proxy_max_n: 1024
+  proxy_per_class: 8
+  proxy_batch: 64
+
+homophilic_graph:
+  n_clusters: 4
+  hyperedge_delta: 0.005
+
+rass:
+  adapter_ranks: [4, 8, 16]
+  sc_keep_ratios: [0.5, 0.75, 1.0]
+  adapter_scale: 0.3
+  n_ops: 3
+
+mds:
+  alpha: 0.5
+
+evolutionary_search:
+  pop: 20
+  gens: 15
+  mutation: 0.3
+  elite: 5
+  tournament: 3
+
+evaluation:
+  n_train: 2000
+  n_test: 1000
+  pca_dim: 128
+  probe_C_grid: [0.1, 0.5, 1.0, 2.0, 5.0]
+  n_seeds: 5
+  eval_max_iter: 1000
+  seeds: [42, 1337, 2024, 314159, 99991]
+
+peft_baselines:
+  lora_rank: 8
+  adapter_bottle: 64
+  peft_lr: 0.001
+  peft_epochs: 80
+  peft_batch: 64
+
+proxy_validation:
+  n_corr_cands: 50
+
+paths:
+  data_root: ./data
+  tg_root: ./data/torchgeo
+  output_root: ./outputs
