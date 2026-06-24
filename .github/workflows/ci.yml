@@ -22,10 +22,9 @@ jobs:
 
       - name: Install CPU-only dependencies for unit tests
         run: |
-          pip install --upgrade pip
-          pip install torch --index-url https://download.pytorch.org/whl/cpu
-          pip install numpy pandas scipy scikit-learn pytest timm
-
+           pip install --upgrade pip
+           pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+           pip install numpy pandas scipy scikit-learn pytest timm
       - name: Run unit tests (pure math / graph / RASS / MDS -- no GPU or dataset downloads needed)
         run: |
           PYTHONPATH=src python -m pytest tests/ -v
