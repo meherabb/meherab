@@ -26,12 +26,12 @@ We answer this with the **FDR deficit ratio γ** — a ten-second diagnostic, co
 flowchart TD
     A["Frozen ViT-B/16<br/>12 transformer blocks"] --> B["Linear CKA similarity<br/>→ 4 cluster nodes"]
     B --> C["Fisher Discriminant Ratio<br/>per node"]
-    C --> D{"γ = best node ÷ final block<br/>ready in ~10 sec"}
+    C --> D{"γ = best node ÷ final block<br/>"}
     D -->|"γ > 1.5"| E["Route to best<br/>mid-layer node pair"]
     D -->|"γ ≈ 1"| Z["Use gradient-based<br/>PEFT instead"]
     E --> F["RASS candidate space<br/>Adapter-Inject · Semantic-Compress · Cross-Fuse"]
     F --> G["Modality Discriminability Score<br/>ranks candidates, no accuracy labels touched"]
-    G --> H["Tournament search<br/>300 evaluations · ≈3 min · once per dataset"]
+    G --> H["Tournament search<br/>300 evaluations · "]
     H --> I["Augmented probe<br/>final-block feature + transformed routed feature"]
 
     classDef routing fill:#2563eb,stroke:#1e3a8a,color:#ffffff,font-weight:bold
